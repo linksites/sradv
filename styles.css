@@ -165,12 +165,35 @@ button{font:inherit}
 .menu-cta{display:none}
 .menu-toggle{
   display:none;
-  width:46px;
+  min-width:46px;
   height:46px;
-  border-radius:14px;
+  padding:0 14px;
+  border-radius:999px;
   border:1px solid var(--line);
-  background:none;
+  background:rgba(255,255,255,.02);
   color:var(--gold);
+  align-items:center;
+  gap:10px;
+  transition:
+    transform var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-smooth),
+    background var(--duration-fast) var(--ease-smooth),
+    box-shadow var(--duration-fast) var(--ease-smooth),
+    color var(--duration-fast) var(--ease-smooth);
+}
+.menu-toggle:hover{
+  transform:translateY(-1px);
+  border-color:rgba(242,207,148,.34);
+  background:rgba(255,255,255,.05);
+  box-shadow:0 16px 34px rgba(0,0,0,.18);
+}
+.menu-toggle-text{
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  transition:letter-spacing var(--duration-fast) var(--ease-smooth), color var(--duration-fast) var(--ease-smooth);
 }
 .menu-toggle-box{
   display:grid;
@@ -191,6 +214,15 @@ body.menu-open .menu-toggle-line:nth-child(2){
 }
 body.menu-open .menu-toggle-line:nth-child(3){
   transform:translateY(-7px) rotate(-45deg);
+}
+body.menu-open .menu-toggle{
+  background:linear-gradient(180deg, rgba(216,177,106,.18), rgba(216,177,106,.08));
+  border-color:rgba(242,207,148,.44);
+  color:var(--gold-strong);
+  box-shadow:0 18px 40px rgba(0,0,0,.22);
+}
+body.menu-open .menu-toggle-text{
+  letter-spacing:.14em;
 }
 .menu-backdrop{
   position:fixed;
@@ -991,6 +1023,7 @@ p{
     place-items:center;
     position:relative;
     z-index:76;
+    grid-auto-flow:column;
   }
   .menu{
     display:none;
@@ -1109,6 +1142,16 @@ p{
   .brand-copy span{
     font-size:.64rem;
     letter-spacing:.22em;
+  }
+  .menu-toggle{
+    min-width:44px;
+    height:44px;
+    padding:0 12px;
+    gap:8px;
+  }
+  .menu-toggle-text{
+    font-size:.72rem;
+    letter-spacing:.14em;
   }
   .hero-copy,
   .section-copy,

@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 const year = document.querySelector('#current-year');
 const body = document.body;
 const header = document.querySelector('.header');
+const toggleText = toggle?.querySelector('.menu-toggle-text');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 if (year) {
@@ -35,6 +36,9 @@ if (toggle && menu) {
     body.classList.remove('menu-open');
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-label', 'Abrir menu');
+    if (toggleText) {
+      toggleText.textContent = 'Menu';
+    }
     backdrop.hidden = true;
   };
 
@@ -44,6 +48,9 @@ if (toggle && menu) {
     body.classList.add('menu-open');
     toggle.setAttribute('aria-expanded', 'true');
     toggle.setAttribute('aria-label', 'Fechar menu');
+    if (toggleText) {
+      toggleText.textContent = 'Fechar';
+    }
     backdrop.hidden = false;
   };
 
