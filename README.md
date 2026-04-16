@@ -1,42 +1,60 @@
-# SRADV - Site Premium
+# SRADV - Site Institucional
 
 ## Status
-Versão pronta para produção estática com estrutura premium, assets incluídas e foco institucional.
+Versao pronta para publicacao estatica, com estrutura institucional completa, responsividade refinada para mobile e paginas internas por area de atuacao.
 
-## Estrutura
-- Hero premium com imagem principal
-- Áreas de atuação
-- Nova seção de Direito Trabalhista
-- Bloco sobre o escritório
-- Depoimentos
-- CTA final
-- Rodapé profissional
-- Botão flutuante do WhatsApp
+## Entregue
+- Home institucional com hero, escritorio, areas, destaque trabalhista, presenca local, fluxo de atendimento, FAQ e CTA final
+- Paginas internas para:
+  - Direito Civil
+  - Direito Empresarial
+  - Direito Criminal
+  - Familia e Sucessoes
+  - Consultoria Juridica
+  - Direito Trabalhista
+- Navegacao mobile com menu dedicado, CTA no celular e comportamento responsivo
+- Ajustes visuais para mobile, incluindo refinamento das imagens principais
+- Efeitos sutis de movimento e microinteracoes
+- SEO tecnico basico:
+  - `robots.txt`
+  - `sitemap.xml`
+  - canonical
+  - Open Graph
+  - Twitter Cards
+  - JSON-LD
+- Contato institucional por WhatsApp, e-mail e Instagram
 
-## Direito Trabalhista
-Sessão criada com foco em defesa do trabalhador:
-- Reclamação trabalhista
-- Reconhecimento de vínculo
-- Horas extras
-- FGTS
-- Férias
-- Verbas rescisórias
-- Rescisão indireta
-- Assédio moral
+## Estrutura do projeto
+- `index.html`: pagina principal
+- `styles.css`: estilos globais e responsividade
+- `script.js`: menu mobile, comportamento do header e animacoes leves
+- `areas/`: paginas internas por area de atuacao
+- `assets/`: imagens e identidade visual
+- `robots.txt`: orientacao para rastreamento
+- `sitemap.xml`: mapa de URLs do site
 
-## Dados do escritório
-- WhatsApp: (91) 98209-6180
-- E-mail: advsergiorodrigues@gmail.com
-- Atendimento apenas com hora marcada
-- Presencial em Belém/PA
-- Online para todo o Brasil
+## Canais do escritorio
+- WhatsApp: `(91) 98209-6180`
+- E-mail: `advsergiorodrigues@gmail.com`
+- Instagram: `@adv.sergiorodrigues`
+- Atendimento presencial em Belem/PA
+- Atendimento online para todo o Brasil
+- Consultas com hora marcada
 
-## Roadmap de melhorias
-1. Criar páginas internas separadas
-2. Adicionar formulário real com backend
-3. SEO local avançado
-4. Blog jurídico
-5. Otimização de imagens e performance
-6. Versão React/Next.js
-7. Integração com analytics
-8. Landing pages por área de atuação
+## Publicacao atual
+- Base publica configurada para: `https://linksites.github.io/sradv/`
+- Projeto pensado para hospedagem estatica
+
+## Roadmap
+### Proxima fase
+1. Publicar a versao final em hospedagem/ambiente definitivo
+2. Converter imagens principais para formatos mais leves, como WebP/AVIF
+3. Adicionar analytics e Search Console
+4. Revisar SEO local com foco em Belem/PA e termos juridicos prioritarios
+5. Criar formulario real com backend ou integracao externa
+
+### Evolucao futura
+1. Criar landing pages mais especificas por tipo de demanda
+2. Estruturar blog juridico ou area de conteudo
+3. Integrar automacao de captacao e CRM
+4. Migrar para React/Next.js, se houver necessidade de expansao
