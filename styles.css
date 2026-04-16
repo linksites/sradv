@@ -1051,9 +1051,30 @@ p{
   }
   .hero-visual{
     grid-template-columns:1fr;
+    max-width:360px;
+    margin:0 auto;
+    gap:14px;
   }
   .hero-side-stack{
     grid-template-columns:repeat(2, minmax(0,1fr));
+  }
+  .hero-photo-card{
+    padding:14px;
+  }
+  .hero-person{
+    aspect-ratio:4/5;
+    max-height:430px;
+    object-position:center 14%;
+  }
+  .about-photo{
+    max-width:420px;
+    margin:0 auto;
+  }
+  .about-photo img{
+    min-height:auto;
+    aspect-ratio:16/10;
+    max-height:300px;
+    object-position:center 32%;
   }
   .mini-highlights,
   .feature-list,
@@ -1110,8 +1131,50 @@ p{
     max-width:none;
     text-align:left;
   }
+  .hero-visual{
+    max-width:290px;
+    gap:12px;
+  }
+  .hero-photo-card{
+    padding:10px;
+    border-radius:24px;
+  }
+  .hero-person{
+    aspect-ratio:4/5;
+    max-height:330px;
+    border-radius:18px;
+    object-position:center 12%;
+  }
+  .hero-photo-caption{
+    gap:8px;
+    padding-top:12px;
+  }
+  .hero-photo-caption strong{
+    font-size:.95rem;
+  }
+  .hero-photo-caption span{
+    font-size:.88rem;
+  }
   .hero-side-stack{
     grid-template-columns:1fr;
+  }
+  .hero-note{
+    padding:14px;
+    gap:10px;
+  }
+  .hero-note img{
+    width:54px;
+    height:54px;
+    border-radius:16px;
+  }
+  .about-photo{
+    max-width:300px;
+  }
+  .about-photo img{
+    aspect-ratio:16/11;
+    max-height:220px;
+    border-radius:18px;
+    object-position:center 34%;
   }
   .hero-note h2{font-size:1.5rem}
   .cta-box,
