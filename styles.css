@@ -180,6 +180,7 @@ button{font:inherit}
     background var(--duration-fast) var(--ease-smooth),
     box-shadow var(--duration-fast) var(--ease-smooth),
     color var(--duration-fast) var(--ease-smooth);
+  justify-content:center;
 }
 .menu-toggle:hover{
   transform:translateY(-1px);
@@ -188,11 +189,13 @@ button{font:inherit}
   box-shadow:0 16px 34px rgba(0,0,0,.18);
 }
 .menu-toggle-text{
+  min-width:6.7ch;
   font-size:.78rem;
   font-weight:800;
   letter-spacing:.18em;
   text-transform:uppercase;
   white-space:nowrap;
+  text-align:center;
   transition:letter-spacing var(--duration-fast) var(--ease-smooth), color var(--duration-fast) var(--ease-smooth);
 }
 .menu-toggle-box{
@@ -1014,8 +1017,19 @@ p{
   }
   .nav{
     grid-template-columns:minmax(0,1fr) auto;
-    gap:12px;
+    gap:10px;
     min-height:78px;
+  }
+  .brand{
+    gap:10px;
+  }
+  .brand-copy strong{
+    font-size:1.06rem;
+    letter-spacing:.06em;
+  }
+  .brand-copy span{
+    font-size:.66rem;
+    letter-spacing:.18em;
   }
   .menu-toggle{
     display:inline-grid;
@@ -1024,6 +1038,7 @@ p{
     position:relative;
     z-index:76;
     grid-auto-flow:column;
+    min-width:124px;
   }
   .menu{
     display:none;
@@ -1132,26 +1147,33 @@ p{
   h3{font-size:clamp(1.35rem, 6vw, 1.8rem)}
   p{line-height:1.66}
   .brand img{
-    width:46px;
-    height:46px;
+    width:42px;
+    height:42px;
   }
   .brand{
-    gap:10px;
+    gap:8px;
   }
-  .brand-copy strong{font-size:1rem}
+  .brand-copy{
+    max-width:168px;
+  }
+  .brand-copy strong{
+    font-size:.9rem;
+    letter-spacing:.04em;
+  }
   .brand-copy span{
-    font-size:.64rem;
-    letter-spacing:.22em;
+    font-size:.58rem;
+    letter-spacing:.14em;
   }
   .menu-toggle{
-    min-width:44px;
-    height:44px;
-    padding:0 12px;
+    min-width:112px;
+    height:42px;
+    padding:0 10px;
     gap:8px;
   }
   .menu-toggle-text{
-    font-size:.72rem;
-    letter-spacing:.14em;
+    min-width:6.1ch;
+    font-size:.68rem;
+    letter-spacing:.12em;
   }
   .hero-copy,
   .section-copy,
@@ -1256,6 +1278,34 @@ p{
     justify-content:center;
     text-align:center;
     padding:14px 0;
+  }
+}
+
+@media (max-width:420px){
+  .nav{
+    gap:8px;
+    min-height:72px;
+  }
+  .brand-copy{
+    max-width:132px;
+  }
+  .brand-copy strong{
+    font-size:.82rem;
+  }
+  .brand-copy span{
+    font-size:.54rem;
+    letter-spacing:.12em;
+  }
+  .menu-toggle{
+    min-width:46px;
+    width:46px;
+    height:46px;
+    padding:0;
+    border-radius:16px;
+    gap:0;
+  }
+  .menu-toggle-text{
+    display:none;
   }
 }
 
