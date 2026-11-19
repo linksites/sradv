@@ -1435,3 +1435,24 @@ a[href^="mailto:"] { overflow-wrap:anywhere; }
     filter:none !important;
   }
 }
+
+.labor-services {
+  scroll-margin-top: 124px;
+}
+
+.labor-services .check-list {
+  margin-block-end: 24px;
+}
+
+.labor-spotlight-heading {
+  grid-column: 1 / -1;
+}
+
+#trabalhista .spotlight-panel {
+  grid-template-rows: auto 1fr auto;
+}
+
+#trabalhista .btn,
+.labor-services .btn {
+  text-align: center;
+}
