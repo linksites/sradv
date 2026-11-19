@@ -1444,6 +1444,16 @@ a[href^="mailto:"] { overflow-wrap:anywhere; }
   margin-block-end: 24px;
 }
 
+#legislacao h3 {
+  margin-block-start: 24px;
+  font-size: 1.4rem;
+}
+
+#legislacao p a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .labor-spotlight-heading {
   grid-column: 1 / -1;
 }
